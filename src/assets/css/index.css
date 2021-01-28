@@ -17,16 +17,19 @@
 
 @layer components {
     .bar {
+        transition: background-color 300ms linear;
         @apply py-0.5 w-full inline-block bg-gray-200 rounded relative
     }
     .bar::before {
         content: '';
         top: 12px;
+        transition: transform 200ms linear, top 200ms linear;
         @apply py-0.5 w-full inline-block bg-gray-200 rounded absolute left-0
     }
     .bar::after {
         content: '';
         top: -12px;
+        transition: transform 200ms linear, top 200ms linear;
         @apply py-0.5 w-full inline-block bg-gray-200 rounded absolute left-0
     }
     .collapse {
@@ -37,5 +40,25 @@
     }
     .nav {
         transition: max-height 200ms linear;
+    }
+    .bar-container {
+        transition: transform 200ms linear;
+    }
+    .active {
+        transform: rotateZ(180deg);
+    }
+    .bar-active:before {
+        top: 0;
+        transform: rotateZ(45deg);
+    }
+    .bar-active:after {
+        top: 0;
+        transform: rotateZ(-45deg);
+    }
+    .bar-active {
+        @apply bg-opacity-0
+    }
+    .poster {
+        @apply left-0
     }
 }
