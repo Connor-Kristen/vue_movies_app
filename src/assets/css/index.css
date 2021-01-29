@@ -4,7 +4,7 @@
 
 @layer base {
     body, html {
-        @apply w-screen h-screen bg-gray-900
+        @apply w-screen h-screen bg-gray-900 overflow-x-hidden
     }
     #app {
         font-family: Avenir, Helvetica, Arial, sans-serif;
