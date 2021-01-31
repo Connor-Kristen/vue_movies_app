@@ -1,7 +1,7 @@
 <template>
   <Navbar/>
   <carousel v-if="movies.length > 0" >
-    <SingleMovie ref="test" v-for="(movie, i) in movies" :key="movie.id" :movie="movie" :index="i"/>
+      <SingleMovie ref="test" v-for="(movie, i) in movies" :key="movie.id" :movie="movie" :index="i"/>
   </carousel>
 </template>
 
