@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-72">
-      <SingleMovie ref="test" v-for="(movie, i) in 10" :key="movie.id" :movie="movie" :index="i"/>
+      <slot></slot>
     <button @click="moveLeft" class="btn h-full block absolute w-9 bg-black bg-opacity-50 rounded-r-xl">
       <span class="material-icons text-4xl text-gray-400">chevron_left</span>
     </button>
@@ -11,10 +11,8 @@
 </template>
 
 <script>
-import SingleMovie from "@/components/SingleMovie";
 export default {
   name: "Carousel",
-  components: {SingleMovie},
   methods: {
     moveRight() {
       const children =  Array.from(this.$el.children)
