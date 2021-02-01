@@ -12,12 +12,12 @@
             <span ref="bar" class="bar "></span>
           </div>
         </div>
-        <div class="flex mx-2 mt-6 flex-col sm:flex-row sm:mt-0">
+        <div class="flex mx-2 mt-6 flex-col sm:flex-row sm:mt-0 sm:w-44 sm:justify-between">
           <router-link :to="{name: 'Home'}" class="flex text-sm text-gray-500 items-center">
             <span class="material-icons text-base mr-0.5">home</span>
             HOME
           </router-link>
-          <router-link :to="{name: 'Home'}" class="flex text-sm text-gray-500 items-center">
+          <router-link :to="{name: 'AddMovie'}" class="flex text-sm text-gray-500 items-center">
             <span class="material-icons text-base d mr-0.5">add_circle</span>
             ADD MOVIE
           </router-link>

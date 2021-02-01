@@ -1,10 +1,16 @@
 <template>
-  <div class=" w-48 h-72 mx-0.5">
-    <img ref="poster" :src="movie.poster" :alt="'poster for '+movie.title" class="poster w-full h-full object-cover">
-    <div>
-    <span class="material-icons text-lg text-white w-5 h-5">create</span>
-    <span class="material-icons">delete_outline</span>
-    <span class="material-icons">check_circle</span>
+  <div class="movie-card bg-gray-700 mx-0.5">
+    <div class=" w-48 h-72">
+      <router-link :to="{name: 'SelectedMovie', params: {id: movie.id}}">
+        <img ref="poster" :src="movie.poster" :alt="'poster for '+movie.title" class="poster w-full h-full object-cover">
+      </router-link>
+    </div>
+    <div class="p-1 flex justify-evenly">
+      <router-link :to="{name: 'EditMovie', params: {id: movie.id}}">
+        <span class="material-icons">create</span>
+      </router-link>
+      <span class="material-icons">delete_outline</span>
+      <span class="material-icons">done</span>
     </div>
   </div>
 </template>
