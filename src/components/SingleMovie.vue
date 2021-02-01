@@ -1,24 +1,26 @@
 <template>
-<!--    <img ref="poster" :src="movie.poster" :alt="'poster for '+movie.title" class="poster inline-block w-48 h-72 object-cover absolute">-->
-  <img ref="poster" :style="'background:'+bgColor()" src="../assets/logo.png" alt="" class="poster inline-block w-48 h-full object-cover absolute">
+  <div class="movie-card bg-gray-700 mx-0.5">
+    <div class=" w-48 h-72">
+      <router-link :to="{name: 'SelectedMovie', params: {id: movie.id}}">
+        <img ref="poster" :src="movie.poster" :alt="'poster for '+movie.title" class="poster w-full h-full object-cover">
+      </router-link>
+    </div>
+    <div class="p-1 flex justify-evenly">
+      <router-link :to="{name: 'EditMovie', params: {id: movie.id}}">
+        <span class="material-icons">create</span>
+      </router-link>
+      <span class="material-icons">delete_outline</span>
+      <span class="material-icons">done</span>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
   name: "SingleMovie",
   props: ["movie", "index"],
-  mounted () {
-    let left = (this.index * this.$refs.poster.offsetWidth) - (this.$refs.poster.offsetWidth / 3);
-    if (this.index > 0) left += (5 * this.index)
-    this.$refs.poster.style.left = left + "px"
-  },
   methods: {
-    bgColor () {
-      let red = Math.ceil(Math.random() * 255)
-      let green =Math.ceil(Math.random() * 255)
-      let blue =Math.ceil(Math.random() * 255)
-      return `rgb(${red}, ${green}, ${blue})`
-    }
+
   }
 }
 </script>

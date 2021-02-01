@@ -17,7 +17,7 @@
 
 @layer components {
     .bar {
-        transition: background-color 300ms linear;
+        transition: background-color 200ms linear;
         @apply py-0.5 w-full inline-block bg-gray-200 rounded relative
     }
     .bar::before {
@@ -58,8 +58,20 @@
     .bar-active {
         @apply bg-opacity-0
     }
-    .poster {
-        transition: left 500ms ease-in-out;
-        @apply left-0
+    .prevNextBtn {
+        transition: background-color 300ms linear, opacity 300ms linear;
+        @apply h-full block absolute w-9 top-0 opacity-0
+    }
+    .prevNextBtn:active {
+        @apply outline-none ring ring-green-400
+    }
+    .prevNextBtn:focus {
+        @apply outline-none
+    }
+    .prevNextBtn:hover {
+        @apply bg-black bg-opacity-50 opacity-100
+    }
+    .material-icons {
+        @apply text-gray-400
     }
 }

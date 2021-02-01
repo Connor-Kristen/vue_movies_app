@@ -1,21 +1,25 @@
 <template>
   <Navbar/>
-  <carousel v-if="movies.length > 0" />
+  <carousel v-if="movies.length > 0" >
+      <SingleMovie ref="test" v-for="(movie, i) in movies" :key="movie.id" :movie="movie" :index="i"/>
+  </carousel>
 </template>
 
 <script>
 // @ is an alias to /src
 import Navbar from '@/components/Navbar';
 import Carousel from "@/components/Carousel";
+import SingleMovie from "@/components/SingleMovie";
 export default {
   name: 'Home',
   components: {
     Navbar,
-    Carousel
+    Carousel,
+    SingleMovie
   },
   data () {
     return {
-      movies: [0]
+      movies: []
     }
   },
   mounted () {
