@@ -5,8 +5,8 @@
         <img ref="poster" :src="movie.poster" :alt="'poster for '+movie.title" class="poster w-full h-full object-cover">
       </router-link>
     </div>
-    <div class="p-1 flex justify-evenly">
-      <router-link :to="{name: 'EditMovie', params: {id: movie.id}}">
+    <div class="p-1 flex justify-evenly items-center">
+      <router-link :to="{name: 'EditMovie', params: {id: movie.id}}" class="flex">
         <span class="material-icons">create</span>
       </router-link>
       <span class="material-icons">delete_outline</span>
@@ -18,7 +18,7 @@
 <script>
 export default {
   name: "SingleMovie",
-  props: ["movie", "index"],
+  props: ["movie"],
   methods: {
 
   }

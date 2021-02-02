@@ -1,7 +1,6 @@
 <template>
   <teleport to="#navbar">
-    <div class="nav bg-black bg-opacity-40 overflow-y-hidden"
-         :class="{expand: navExpand, collapse: !navExpand}">
+    <div class="nav bg-black bg-opacity-40 overflow-y-hidden" :class="{expand: navExpand, collapse: !navExpand}">
       <div class="max-w-4xl mx-auto p-2 flex flex-col sm:flex-row sm:justify-between">
         <div class="flex items-center justify-center">
           <div class="flex-grow flex items-center">
