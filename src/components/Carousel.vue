@@ -9,7 +9,9 @@
       <button @click="next" class="prevNextBtn right-0 nextBtn">
         <span class="material-icons text-4xl text-gray-200 ">chevron_right</span>
       </button>
+    <button class="bg-red-400 mt-6" @click="reload">reload</button>
   </div>
+
 </template>
 
 <script>
@@ -32,6 +34,9 @@ export default {
 
     previous() {
       this.$refs.flickity.previous();
+    },
+    reload() {
+      this.$refs.flickity.flickity().reposition()
     }
   }
 }
