@@ -9,7 +9,7 @@
       <router-link :to="{name: 'EditMovie', params: {id: movie.id}}" class="flex">
         <span class="material-icons">create</span>
       </router-link>
-      <span class="material-icons">delete_outline</span>
+      <span @click="deleteMovie" class="material-icons">delete_outline</span>
       <span class="material-icons">done</span>
     </div>
   </div>
@@ -20,7 +20,13 @@ export default {
   name: "SingleMovie",
   props: ["movie"],
   methods: {
-
+    deleteMovie() {
+      fetch(`http://localhost:3000/movies/${this.movie.id}`,
+          {method: "delete"})
+          .then(() => {
+           this.$emit("deleteMovie", this.movie.id)
+      })
+    }
   }
 }
 </script>
