@@ -1,6 +1,6 @@
 <template>
-  <carousel v-if="movies.length > 0" >
-      <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="(movie, i) in movies" :key="movie.id" :movie="movie" :index="i"/>
+  <carousel v-if="movies.length > 0">
+    <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="(movie, i) in movies" :key="movie.id" :movie="movie" :index="i"/>
   </carousel>
 </template>
 
@@ -22,9 +22,9 @@ export default {
   },
   mounted () {
     fetch(" http://localhost:3000/movies")
-    .then(res => res.json())
-    .then(data => this.movies = data)
-    .catch(console.log)
+        .then(res => res.json())
+        .then(data => this.movies = data)
+        .catch(console.log)
   },
   methods: {
     deleteMovie(id) {

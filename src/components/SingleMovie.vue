@@ -24,7 +24,8 @@ export default {
       fetch(`http://localhost:3000/movies/${this.movie.id}`,
           {method: "delete"})
           .then(() => {
-           this.$emit("deleteMovie", this.movie.id)
+            this.$emit("deleteMovie", this.movie.id)
+            this.$router.go(0);
       })
     }
   }

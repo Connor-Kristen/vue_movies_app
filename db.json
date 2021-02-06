@@ -126,31 +126,6 @@
       "id": 5
     },
     {
-      "title": "Resident Evil",
-      "year": "2002",
-      "criticRatings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "6.7/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "35%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "33/100"
-        }
-      ],
-      "userRating": 5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BZmI1ZGRhNDYtOGVjZC00MmUyLThlNTktMTQyZGE3MzE1ZTdlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg",
-      "genre": "Action, Horror, Sci-Fi",
-      "director": "Paul W.S. Anderson",
-      "plot": "A special military unit fights a powerful, out-of-control supercomputer and hundreds of scientists who have mutated into flesh-eating creatures after a laboratory accident.",
-      "actors": "Ryan McCluskey, Oscar Pearce, Indra Ové, Anna Bolt",
-      "id": 6
-    },
-    {
       "title": "Avengers: Endgame",
       "year": "2019",
       "criticRatings": [
@@ -274,28 +249,28 @@
       "id": 11
     },
     {
-      "title": "Moonstruck",
-      "year": "1987",
+      "title": "Resident Evil",
+      "movieYear": "2002",
       "criticRatings": [
         {
           "Source": "Internet Movie Database",
-          "Value": "7.1/10"
+          "Value": "6.7/10"
         },
         {
           "Source": "Rotten Tomatoes",
-          "Value": "94%"
+          "Value": "35%"
         },
         {
           "Source": "Metacritic",
-          "Value": "83/100"
+          "Value": "33/100"
         }
       ],
       "userRating": 5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjIwMDY0NzYyMF5BMl5BanBnXkFtZTcwOTE5NDk0NA@@._V1_SX300.jpg",
-      "genre": "Comedy, Drama, Romance",
-      "director": "Norman Jewison",
-      "plot": "Loretta Castorini, a bookkeeper from Brooklyn, New York, finds herself in a difficult situation when she falls for the brother of the man she has agreed to marry.",
-      "actors": "Cher, Nicolas Cage, Vincent Gardenia, Olympia Dukakis",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZmI1ZGRhNDYtOGVjZC00MmUyLThlNTktMTQyZGE3MzE1ZTdlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg",
+      "genre": "Action, Horror, Sci-Fi",
+      "director": "Paul W.S. Anderson",
+      "plot": "A special military unit fights a powerful, out-of-control supercomputer and hundreds of scientists who have mutated into flesh-eating creatures after a laboratory accident.",
+      "actors": "Ryan McCluskey, Oscar Pearce, Indra Ové, Anna Bolt",
       "id": 12
     }
   ]

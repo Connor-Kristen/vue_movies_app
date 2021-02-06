@@ -1,15 +1,14 @@
 <template>
   <div class="relative h-72 mt-5">
     <Flickity ref="flickity" :options="options">
-      <slot></slot>
+      <slot @click="test"></slot>
     </Flickity>
     <button @click="previous" class="prevNextBtn prevBtn">
       <span class="material-icons text-4xl text-gray-200">chevron_left</span>
     </button>
-      <button @click="next" class="prevNextBtn right-0 nextBtn">
-        <span class="material-icons text-4xl text-gray-200 ">chevron_right</span>
-      </button>
-    <button class="bg-red-400 mt-6" @click="reload">reload</button>
+    <button @click="next" class="prevNextBtn right-0 nextBtn">
+      <span class="material-icons text-4xl text-gray-200 ">chevron_right</span>
+    </button>
   </div>
 
 </template>
@@ -23,7 +22,8 @@ export default {
     return {
       options: {
         wrapAround: true,
-        prevNextButtons: false
+        prevNextButtons: false,
+        imagesLoaded: true
       }
     }
   },
@@ -35,9 +35,12 @@ export default {
     previous() {
       this.$refs.flickity.previous();
     },
-    reload() {
-      this.$refs.flickity.flickity().reposition()
+    test() {
+      console.log('element clicked')
     }
+  },
+  updated() {
+    console.log(this.$refs.flickity.flickity().reposition());
   }
 }
 </script>
