@@ -25,6 +25,7 @@ const routes = [
     path: '/movie/edit/:id',
     name: 'EditMovie',
     component: EditMovie,
+    props: true
   }
 ]
 

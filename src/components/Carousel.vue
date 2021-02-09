@@ -1,16 +1,15 @@
 <template>
-  <div class="relative h-72 mt-5">
+  <div class="relative h-96">
     <Flickity ref="flickity" :options="options">
-      <slot @click="test"></slot>
+      <slot></slot>
     </Flickity>
     <button @click="previous" class="prevNextBtn prevBtn">
-      <span class="material-icons text-4xl text-gray-200">chevron_left</span>
+      <span class="material-icons flex justify-center arrow text-7xl text-gray-200">chevron_left</span>
     </button>
     <button @click="next" class="prevNextBtn right-0 nextBtn">
-      <span class="material-icons text-4xl text-gray-200 ">chevron_right</span>
+      <span class="material-icons arrow flex justify-center text-7xl text-gray-200 ">chevron_right</span>
     </button>
   </div>
-
 </template>
 
 <script>

@@ -44,7 +44,7 @@
       ],
       "userRating": 5,
       "poster": "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_SX300.jpg",
-      "genre": "Animation, Action, Adventure, Family, Fantasy",
+      "genre": "Action, Adventure, Family, Fantasy, Animation, Romance",
       "director": "Dean DeBlois, Chris Sanders",
       "plot": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
       "actors": "Jay Baruchel, Gerard Butler, Craig Ferguson, America Ferrera",
@@ -69,7 +69,7 @@
       ],
       "userRating": 5,
       "poster": "https://m.media-amazon.com/images/M/MV5BYWE1MzdmNmMtNWQwZS00MTVkLTk3MDMtYzVkOWZlOTczMDIwXkEyXkFqcGdeQXVyNjg4NzYzMzA@._V1_SX300.jpg",
-      "genre": "Comedy, Family, Romance",
+      "genre": "Comedy, Family, Romance, Horror",
       "director": "Penelope Spheeris",
       "plot": "Alfalfa is wooing Darla and his \"He-Man-Woman-Hating\" friends attempt to sabotage the relationship.",
       "actors": "Travis Tedford, Kevin Jamal Woods, Jordan Warkol, Zachary Mabry",
@@ -265,13 +265,205 @@
           "Value": "33/100"
         }
       ],
-      "userRating": 5,
+      "userRating": 4,
       "poster": "https://m.media-amazon.com/images/M/MV5BZmI1ZGRhNDYtOGVjZC00MmUyLThlNTktMTQyZGE3MzE1ZTdlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_SX300.jpg",
-      "genre": "Action, Horror, Sci-Fi",
+      "genre": "Action, Horror, Sci-Fi, Thriller",
       "director": "Paul W.S. Anderson",
       "plot": "A special military unit fights a powerful, out-of-control supercomputer and hundreds of scientists who have mutated into flesh-eating creatures after a laboratory accident.",
       "actors": "Ryan McCluskey, Oscar Pearce, Indra Ové, Anna Bolt",
       "id": 12
+    },
+    {
+      "title": "Over the Moon",
+      "movieYear": "2020",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.5/10"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "60/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTI0ZjVhM2ItMmFkOS00ZmFiLTg4NGQtODJjNTZmMDYxMWMyXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+      "genre": "Animation, Adventure, Comedy, Family, Fantasy, Musical, Sci-Fi",
+      "director": "Glen Keane, John Kahrs(co-director)",
+      "plot": "In this animated musical, a girl builds a rocket ship and blasts off, hoping to meet a mythical moon goddess.",
+      "actors": "Glen Keane, Brycen Hall, Ruthie Ann Miles, John Cho",
+      "id": 13
+    },
+    {
+      "title": "Moana",
+      "movieYear": "2016",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "95%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "81/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_SX300.jpg",
+      "genre": "Animation, Adventure, Comedy, Family, Fantasy, Musical",
+      "director": "Ron Clements, John Musker, Don Hall(co-director), Chris Williams(co-director)",
+      "plot": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+      "actors": "Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison",
+      "id": 14
+    },
+    {
+      "title": "Trollhunters: Tales of Arcadia",
+      "movieYear": "2016–2018",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.5/10"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2Y2YWE0ZDMtNzQzMC00MDI0LThlZjAtMWY4YjZlYWM2OWFjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+      "genre": "Animation, Action, Adventure, Comedy, Drama, Family, Fantasy",
+      "director": "N/A",
+      "plot": "An ordinary boy finds a magic amulet that chooses him to be a Trollhunter, a guardian that defends the world of humans and the secret world of trolls.",
+      "actors": "Charlie Saxton, Lexi Medrano, Anton Yelchin, Kelsey Grammer",
+      "id": 15
+    },
+    {
+      "title": "Kipo and the Age of Wonderbeasts",
+      "movieYear": "2020",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDczZDIxZjEtNDJiZS00NmQwLWJjMGEtN2UwNDY0ODdjODNiXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_SX300.jpg",
+      "genre": "Animation, Action, Adventure, Fantasy, Musical, Comedy",
+      "director": "N/A",
+      "plot": "A girl explores the possibilities in a post-apocalyptic world.",
+      "actors": "Karen Fukuhara, Sydney Mikayla, Dee Bradley Baker, Deon Cole",
+      "id": 16
+    },
+    {
+      "title": "The Cabin in the Woods",
+      "movieYear": "2011",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.0/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "92%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "72/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTUxNzYyMjg2N15BMl5BanBnXkFtZTcwMTExNzExNw@@._V1_SX300.jpg",
+      "genre": "Comedy, Horror",
+      "director": "Drew Goddard",
+      "plot": "Five friends go for a break at a remote cabin, where they get more than they bargained for, discovering the truth behind the cabin in the woods.",
+      "actors": "Kristen Connolly, Chris Hemsworth, Anna Hutchison, Fran Kranz",
+      "id": 17
+    },
+    {
+      "title": "Star Trek",
+      "movieYear": "2009",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "94%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "82/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjE5NDQ5OTE4Ml5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_SX300.jpg",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "J.J. Abrams",
+      "plot": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.",
+      "actors": "Chris Pine, Zachary Quinto, Leonard Nimoy, Eric Bana",
+      "id": 18
+    },
+    {
+      "title": "Pacific Rim",
+      "movieYear": "2013",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "72%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "65/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTY3MTI5NjQ4Nl5BMl5BanBnXkFtZTcwOTU1OTU0OQ@@._V1_SX300.jpg",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "Guillermo del Toro",
+      "plot": "As a war between humankind and monstrous sea creatures wages on, a former pilot and a trainee are paired up to drive a seemingly obsolete special weapon in a desperate effort to save the world from the apocalypse.",
+      "actors": "Charlie Hunnam, Diego Klattenhoff, Idris Elba, Rinko Kikuchi",
+      "id": 19
+    },
+    {
+      "title": "The Lord of the Rings: The Return of the King",
+      "movieYear": "2003",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "93%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "94/100"
+        }
+      ],
+      "userRating": null,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "genre": "Action, Adventure, Drama, Fantasy",
+      "director": "Peter Jackson",
+      "plot": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "actors": "Noel Appleby, Ali Astin, Sean Astin, David Aston",
+      "id": 20
+    },
+    {
+      "title": "WandaVision",
+      "movieYear": "2021",
+      "criticRatings": [],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjJiZmE5ZDgtYWUxZi00MWI1LTg2MmEtZmUwZGE2YzRkNTE5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "genre": "Action, Adventure, Comedy, Drama, Fantasy, Sci-Fi",
+      "director": "N/A",
+      "plot": "Blends the style of classic sitcoms with the MCU in which Wanda Maximoff and Vision -two super-powered beings living their ideal suburban lives-begin to suspect that everything is not as it seems.",
+      "actors": "Paul Bettany, Elizabeth Olsen, Kat Dennings, Kathryn Hahn",
+      "id": 21
     }
   ]
 }

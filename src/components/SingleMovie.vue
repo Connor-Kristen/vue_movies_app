@@ -1,11 +1,12 @@
 <template>
-  <div class="movie-card bg-gray-700 mx-0.5">
+  <div class="movie-card bg-gray-700 mx-0.5 w-48">
     <div class=" w-48 h-72">
       <router-link :to="{name: 'SelectedMovie', params: {id: movie.id}}">
         <img ref="poster" :src="movie.poster" :alt="'poster for '+movie.title" class="poster w-full h-full object-cover">
       </router-link>
     </div>
-    <div class="p-1 flex justify-evenly items-center">
+    <div class="text-gray-300 text-xs overflow-ellipsis h-8 p-1">{{movie.title}}</div>
+    <div class="p-1 flex justify-evenly items-center mt-0.5">
       <router-link :to="{name: 'EditMovie', params: {id: movie.id}}" class="flex">
         <span class="material-icons">create</span>
       </router-link>

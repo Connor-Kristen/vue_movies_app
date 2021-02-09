@@ -28,7 +28,8 @@ export default {
         let movies = await fetch(`http://www.omdbapi.com/?apikey=${process.env.VUE_APP_OMDB_KEY}&t=${title.value}&y=${year.value}`)
         if (!movies.ok) throw new Error("could not find that movie");
         movieFound.value = await movies.json()
-          fetch(" http://localhost:3000/movies",
+        if (movieFound.value.Error === "Movie not found!") throw new Error("Movie not found");
+        fetch(" http://localhost:3000/movies",
             {
               method: "POST",
               headers: {'Content-Type': 'application/json'},
@@ -44,7 +45,9 @@ export default {
                 actors: movieFound.value.Actors
               })
             }).then(() => {router.push({name: "Home"})})
-      } catch (e) {error.value = e;}
+      } catch (e) {
+        const errorString = e.toString()
+        error.value = errorString.substring(errorString.indexOf(":")+1);}
     }
 
     return {title, year, getMovie, movieFound, error, rating}
