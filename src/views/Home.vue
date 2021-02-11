@@ -1,36 +1,41 @@
 <template>
-  <div class="mt-3 text-gray-200 h-96 mt-5">
-    <h2>ALL MOVIES</h2>
+  <div class="mt-3 text-gray-200 my-9">
+    <h2 class="text-left">ALL MOVIES</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in movies" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 h-96 mt-12">
-    <h2>ANIMATION</h2>
+  <div class=" text-gray-200 my-12">
+    <h2 class="text-left">ANIMATION</h2>
     <carousel v-if="movies.length > 0" >
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Animation" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 h-96 mt-12">
+  <div class=" text-gray-200 my-12">
     <h2>COMEDY</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Comedy" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 h-96 mt-12">
+  <div class=" text-gray-200 my-12">
     <h2>SCI-FI</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.SciFi" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 h-96 mt-12">
+  <div class=" text-gray-200 my-12">
     <h2>FANTASY</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Fantasy" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
+  <div class=" text-gray-200 my-12">
+    <h2>HORROR</h2>
+    <carousel v-if="movies.length > 0">
+      <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Horror" :key="movie.id" :movie="movie"/>
+    </carousel>
+  </div>
 </template>
-
 <script>
 // @ is an alias to /src
 
@@ -44,7 +49,8 @@ export default {
   },
   data () {
     return {
-      movies: []
+      movies: [],
+
     }
   },
   mounted () {
@@ -56,7 +62,7 @@ export default {
   methods: {
     deleteMovie(id) {
       this.movies = this.movies.filter(movie => movie.id !== id);
-      this.$router.push({ name: "Home"})
+      // this.$router.push({ name: "Home"})
     }
   },
   computed: {
@@ -69,12 +75,12 @@ export default {
         Horror:[],
       }
       for (const movie of this.movies) {
-        console.log(movie.genre.includes("Horror"));
+        movie.genre = movie.genre.split(",").map(genre => genre.trim());
         switch (true) {
           case movie.genre.includes("Animation"):
             genres.Animation = this.movies.filter(movie => movie.genre.includes("Animation"));
             break;
-          case movie.genre.includes("Sci-Fi"):
+          case movie.genre.includes("Sci-Fi") && !movie.genre.includes("Horror"):
             genres.SciFi = this.movies.filter(movie => movie.genre.includes("Sci-Fi"));
             break;
           case movie.genre.includes("Comedy"):

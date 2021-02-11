@@ -26,31 +26,6 @@
       "id": 1
     },
     {
-      "title": "How to Train Your Dragon",
-      "year": "2010",
-      "criticRatings": [
-        {
-          "Source": "Internet Movie Database",
-          "Value": "8.1/10"
-        },
-        {
-          "Source": "Rotten Tomatoes",
-          "Value": "99%"
-        },
-        {
-          "Source": "Metacritic",
-          "Value": "75/100"
-        }
-      ],
-      "userRating": 5,
-      "poster": "https://m.media-amazon.com/images/M/MV5BMjA5NDQyMjc2NF5BMl5BanBnXkFtZTcwMjg5ODcyMw@@._V1_SX300.jpg",
-      "genre": "Action, Adventure, Family, Fantasy, Animation, Romance",
-      "director": "Dean DeBlois, Chris Sanders",
-      "plot": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
-      "actors": "Jay Baruchel, Gerard Butler, Craig Ferguson, America Ferrera",
-      "id": 2
-    },
-    {
       "title": "The Little Rascals",
       "year": "1994",
       "criticRatings": [
@@ -464,6 +439,357 @@
       "plot": "Blends the style of classic sitcoms with the MCU in which Wanda Maximoff and Vision -two super-powered beings living their ideal suburban lives-begin to suspect that everything is not as it seems.",
       "actors": "Paul Bettany, Elizabeth Olsen, Kat Dennings, Kathryn Hahn",
       "id": 21
+    },
+    {
+      "title": "The Exorcist",
+      "movieYear": "1973",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.0/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "83%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "81/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "genre": "Horror",
+      "director": "William Friedkin",
+      "plot": "When a 12-year-old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her.",
+      "actors": "Ellen Burstyn, Max von Sydow, Lee J. Cobb, Kitty Winn",
+      "id": 22
+    },
+    {
+      "title": "The Autopsy of Jane Doe",
+      "movieYear": "2016",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "87%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "65/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjA2MTEzMzkzM15BMl5BanBnXkFtZTgwMjM2MTM5MDI@._V1_SX300.jpg",
+      "genre": "Horror, Mystery, Thriller",
+      "director": "André Øvredal",
+      "plot": "A father and son, both coroners, are pulled into a complex mystery while attempting to identify the body of a young woman, who was apparently harboring dark secrets.",
+      "actors": "Brian Cox, Emile Hirsch, Ophelia Lovibond, Michael McElhatton",
+      "id": 23
+    },
+    {
+      "title": "Star Trek",
+      "movieYear": "2009",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.9/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "94%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "82/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjE5NDQ5OTE4Ml5BMl5BanBnXkFtZTcwOTE3NDIzMw@@._V1_SX300.jpg",
+      "genre": "Action, Adventure, Sci-Fi",
+      "director": "J.J. Abrams",
+      "plot": "The brash James T. Kirk tries to live up to his father's legacy with Mr. Spock keeping him in check as a vengeful Romulan from the future creates black holes to destroy the Federation one planet at a time.",
+      "actors": "Chris Pine, Zachary Quinto, Leonard Nimoy, Eric Bana",
+      "id": 24
+    },
+    {
+      "title": "Parasite",
+      "movieYear": "2019",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "98%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "96/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
+      "genre": "Comedy, Drama, Thriller",
+      "director": "Bong Joon Ho",
+      "plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+      "actors": "Kang-ho Song, Lee Sun-kyun, Cho Yeo-jeong, Choi Woo-sik",
+      "id": 25
+    },
+    {
+      "title": "The Legend of Korra",
+      "movieYear": "2012–2014",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        }
+      ],
+      "userRating": 6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTRmM2E5OWYtYmYzMi00MDRiLTg2ZTYtZGQyZTNhZDMxYTgzXkEyXkFqcGdeQXVyODUwNjEzMzg@._V1_SX300.jpg",
+      "genre": "Animation, Action, Adventure, Comedy, Drama, Family, Fantasy, Sci-Fi",
+      "director": "N/A",
+      "plot": "Avatar Korra fights to keep Republic City safe from the evil forces of both the physical and spiritual worlds.",
+      "actors": "Janet Varney, Jeff Bennett, Dee Bradley Baker, P.J. Byrne",
+      "id": 26
+    },
+    {
+      "title": "Disenchantment",
+      "movieYear": "2018–",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.2/10"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzlkYzk0YzItM2I0ZC00NmE5LTljMGYtNTY2ZTVhMzA5OWJjXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "genre": "Animation, Action, Adventure, Comedy, Fantasy",
+      "director": "N/A",
+      "plot": "Princess Tiabeanie, 'Bean', is annoyed at her imminent arranged marriage to Prince Merkimer. Then she meets Luci, a demon, and Elfo, an elf, and things get rather exciting, and dangerous.",
+      "actors": "Abbi Jacobson, Eric André, Nat Faxon, John DiMaggio",
+      "id": 27
+    },
+    {
+      "title": "The Dragon Prince",
+      "movieYear": "2018–",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.4/10"
+        }
+      ],
+      "userRating": 6,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjA5MjEwODU1MV5BMl5BanBnXkFtZTgwNzk0MzA5NTM@._V1_SX300.jpg",
+      "genre": "Animation, Adventure, Drama, Family, Fantasy, Thriller",
+      "director": "Justin Richmond",
+      "plot": "Two human princes forge an unlikely bond with the elfin assassin sent to kill them, embarking on an epic quest to bring peace to their warring lands.",
+      "actors": "Paula Burrows, Jack De Sena, Sasha Rojen, Jason Simpson",
+      "id": 28
+    },
+    {
+      "title": "Tremors",
+      "movieYear": "1990",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "86%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "65/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTEzNjkwMzIyMjZeQTJeQWpwZ15BbWU4MDI2NTU5ODYx._V1_SX300.jpg",
+      "genre": "Comedy, Horror",
+      "director": "Ron Underwood",
+      "plot": "Natives of a small isolated town defend themselves against strange underground creatures which are killing them one by one.",
+      "actors": "Kevin Bacon, Fred Ward, Finn Carter, Michael Gross",
+      "id": 29
+    },
+    {
+      "title": "Cirque du Freak: The Vampire's Assistant",
+      "movieYear": "2009",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.8/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "38%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "43/100"
+        }
+      ],
+      "userRating": 4,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTI1NDA1MTMwNl5BMl5BanBnXkFtZTcwNTg0MDE4Mg@@._V1_SX300.jpg",
+      "genre": "Action, Adventure, Fantasy, Thriller",
+      "director": "Paul Weitz",
+      "plot": "Teenager Darren Shan meets a mysterious man at a freak show who turns out to be a vampire. After a series of events, Darren must leave his normal life and go on the road with the Cirque du Freak, becoming a creature of the night.",
+      "actors": "John C. Reilly, Josh Hutcherson, Chris Massoglia, Jessica Carlson",
+      "id": 30
+    },
+    {
+      "title": "The Silence of the Lambs",
+      "movieYear": "1991",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "8.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "96%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "85/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "genre": "Crime, Drama, Thriller",
+      "director": "Jonathan Demme",
+      "plot": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "actors": "Jodie Foster, Lawrence A. Bonney, Kasi Lemmons, Lawrence T. Wrentz",
+      "id": 31
+    },
+    {
+      "title": "A Quiet Place",
+      "movieYear": "2018",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.5/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "96%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "82/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_SX300.jpg",
+      "genre": "Drama, Horror, Sci-Fi",
+      "director": "John Krasinski",
+      "plot": "In a post-apocalyptic world, a family is forced to live in silence while hiding from monsters with ultra-sensitive hearing.",
+      "actors": "Emily Blunt, John Krasinski, Millicent Simmonds, Noah Jupe",
+      "id": 32
+    },
+    {
+      "title": "Scary Movie",
+      "movieYear": "2000",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.2/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "53%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "48/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGEzZjdjMGQtZmYzZC00N2I4LThiY2QtNWY5ZmQ3M2ExZmM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "genre": "Comedy",
+      "director": "Keenen Ivory Wayans",
+      "plot": "A year after disposing of the body of a man they accidentally killed, a group of dumb teenagers are stalked by a bumbling serial killer.",
+      "actors": "Carmen Electra, Dave Sheridan, Frank B. Moore, Giacomo Baessato",
+      "id": 33
+    },
+    {
+      "title": "In the Tall Grass",
+      "movieYear": "2019",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "5.4/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "36%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "46/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjA2ZWU3N2MtY2JkYy00YjFjLWEyZWQtMjQ0MTU0NDk1ZTZmXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+      "genre": "Horror, Mystery, Thriller",
+      "director": "Vincenzo Natali",
+      "plot": "After hearing a young boy's cry for help, a sister and brother venture into a vast field of tall grass in Kansas but soon discover there may be no way out...and that something evil lurks within.",
+      "actors": "Laysla De Oliveira, Avery Whitted, Patrick Wilson, Will Buie Jr.",
+      "id": 34
+    },
+    {
+      "title": "Child's Play",
+      "movieYear": "1988",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "6.6/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "71%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "58/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGU1MjNiYWYtNGQ5MS00MTgzLTlkYjItZDhhNTdlMTkxZGVlL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+      "genre": "Fantasy, Horror, Thriller",
+      "director": "Tom Holland",
+      "plot": "A single mother gives her son a much sought-after doll for his birthday, only to discover that it is possessed by the soul of a serial killer.",
+      "actors": "Catherine Hicks, Chris Sarandon, Alex Vincent, Brad Dourif",
+      "id": 36
+    },
+    {
+      "title": "Dredd",
+      "movieYear": "2012",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.1/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "79%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "60/100"
+        }
+      ],
+      "userRating": 5,
+      "poster": "https://m.media-amazon.com/images/M/MV5BODkyNDQzMzUzOF5BMl5BanBnXkFtZTcwODYyMDEyOA@@._V1_SX300.jpg",
+      "genre": "Action, Crime, Sci-Fi",
+      "director": "Pete Travis",
+      "plot": "In a violent, futuristic city where the police have the authority to act as judge, jury and executioner, a cop teams with a trainee to take down a gang that deals the reality-altering drug, SLO-MO.",
+      "actors": "Karl Urban, Rachel Wood, Andile Mngadi, Porteus Xandau",
+      "id": 37
     }
   ]
 }

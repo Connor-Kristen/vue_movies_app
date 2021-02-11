@@ -16,8 +16,8 @@
         flex-direction: column;
         justify-content: end;
     }
-    #footer {
-        @apply h-36
+    h2 {
+        @apply text-left text-2xl mx-1 px-1 mt-1 pt-1
     }
 }
 
@@ -66,7 +66,7 @@
     }
     .prevNextBtn {
         transition: background-color 300ms linear, opacity 300ms linear;
-        @apply h-88 block absolute w-12 top-0 opacity-0
+        @apply h-full block absolute w-12 top-0 opacity-0
     }
     .prevNextBtn:active {
         @apply outline-none ring ring-green-400
@@ -96,5 +96,8 @@
     }
     .flickity-page-dots {
         @apply hidden md:block
+    }
+    .genre-select:hover {
+        @apply text-green-300
     }
 }

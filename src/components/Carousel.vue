@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-96">
+  <div class="relative">
     <Flickity ref="flickity" :options="options">
       <slot></slot>
     </Flickity>
@@ -22,7 +22,8 @@ export default {
       options: {
         wrapAround: true,
         prevNextButtons: false,
-        imagesLoaded: true
+        imagesLoaded: true,
+        groupCells: true
       }
     }
   },
@@ -39,7 +40,7 @@ export default {
     }
   },
   updated() {
-    console.log(this.$refs.flickity.flickity().reposition());
+    this.$refs.flickity.flickity().resize();
   }
 }
 </script>

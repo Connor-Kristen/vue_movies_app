@@ -1,14 +1,21 @@
 <template>
-  <form v-if="genres.length > 0">
+  <form v-if="genres.length > 0" class="flex flex-col items-center relative">
     <label for="userRating">Current User Rating</label>
-    <input id="userRating" type="number" v-model="userRating">
-    <fieldset class="flex flex-col w-36 m-auto">
-      <label v-for="genre in genreList" :key="genre" class="text-right">
+    <input id="userRating" type="number" v-model="userRating" class="p-1 w-44 mb-10 mt-2">
+    <fieldset ref="select" :class="{'h-8': !expanded}"
+              class="flex flex-col absolute items-center w-44 px-1 rounded-sm bg-white overflow-y-hidden top-20">
+
+      <span class="text-center inline-block w-full text-lg h-8 pt-0.5">
+        Select Genre
+        <span @click="expand" class="material-icons absolute top-1 right-0">expand_more</span>
+      </span>
+      <label v-for="genre in genreList"
+             :key="genre" class="text-right w-full p-1 genre-select">
         {{genre}}
-        <input type="checkbox" v-model="genres" :value="genre" :checked="genres.includes(genre)">
+        <input ref="checkbox" type="checkbox" v-model="genres" :value="genre" :checked="genres.includes(genre)">
       </label>
     </fieldset>
-    <textarea id="plot" v-model="plot"></textarea>
+    <textarea id="plot" v-model="plot" class="w-80 h-32 my-5"></textarea>
     <label for="plot">{{plot}}</label>
     <button @click.prevent="updateMovie">Save Changes</button>
   </form>
@@ -46,7 +53,9 @@ export default {
         'War',
         'Musical',
         'Documentary',
-        'Family']
+        'Family'],
+      expanded: false,
+      isChecked: false
     }
   },
   mounted() {
@@ -73,6 +82,9 @@ export default {
             body: JSON.stringify(body)
           }
       ).then(() => {this.$router.push(`/movie/${this.id}`)})
+    },
+    expand() {
+      this.expanded = !this.expanded
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
-  <div class="movie-card bg-gray-700 mx-0.5 w-48">
-    <div class=" w-48 h-72">
+  <div class="movie-card bg-gray-700 mx-0.5 w-52">
+    <div class=" w-52 h-80">
       <router-link :to="{name: 'SelectedMovie', params: {id: movie.id}}">
         <img ref="poster" :src="movie.poster" :alt="'poster for '+movie.title" class="poster w-full h-full object-cover">
       </router-link>
@@ -26,7 +26,7 @@ export default {
           {method: "delete"})
           .then(() => {
             this.$emit("deleteMovie", this.movie.id)
-            this.$router.go(0);
+            // this.$router.go(0);
       })
     }
   }
