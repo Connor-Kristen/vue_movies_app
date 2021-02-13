@@ -14,10 +14,16 @@
         color: #2c3e50;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: space-between;
     }
     h2 {
         @apply text-left text-2xl mx-1 px-1 mt-1 pt-1
+    }
+    #footer {
+       @apply h-40 w-full bg-gray-700 mt-20
+    }
+    .wrapper {
+        height: 38rem;
     }
 }
 
@@ -99,5 +105,11 @@
     }
     .genre-select:hover {
         @apply text-green-300
+    }
+    fieldset {
+        transition: max-height 200ms linear;
+    }
+    .btn {
+        @apply p-1 bg-green-300 rounded
     }
 }

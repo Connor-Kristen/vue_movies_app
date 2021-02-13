@@ -58,11 +58,11 @@ export default {
         .then(res => res.json())
         .then(data => this.movies = data)
         .catch(console.log)
+
   },
   methods: {
     deleteMovie(id) {
       this.movies = this.movies.filter(movie => movie.id !== id);
-      // this.$router.push({ name: "Home"})
     }
   },
   computed: {
@@ -75,23 +75,25 @@ export default {
         Horror:[],
       }
       for (const movie of this.movies) {
-        movie.genre = movie.genre.split(",").map(genre => genre.trim());
-        switch (true) {
-          case movie.genre.includes("Animation"):
-            genres.Animation = this.movies.filter(movie => movie.genre.includes("Animation"));
-            break;
-          case movie.genre.includes("Sci-Fi") && !movie.genre.includes("Horror"):
-            genres.SciFi = this.movies.filter(movie => movie.genre.includes("Sci-Fi"));
-            break;
-          case movie.genre.includes("Comedy"):
-            genres.Comedy = this.movies.filter(movie => movie.genre.includes("Comedy"));
-            break;
-          case movie.genre.includes("Fantasy"):
-            genres.Fantasy = this.movies.filter(movie => movie.genre.includes("Fantasy"));
-            break;
-          case movie.genre.includes("Horror"):
-            genres.Horror = this.movies.filter(movie => movie.genre.includes("Horror"));
-            break;
+        if (typeof movie.genre !== 'object') {
+          movie.genre = movie.genre.split(",").map(genre => genre.trim());
+          switch (true) {
+            case movie.genre.includes("Animation"):
+              genres.Animation = this.movies.filter(movie => movie.genre.includes("Animation"));
+              break;
+            case movie.genre.includes("Sci-Fi") && !movie.genre.includes("Horror"):
+              genres.SciFi = this.movies.filter(movie => movie.genre.includes("Sci-Fi"));
+              break;
+            case movie.genre.includes("Comedy"):
+              genres.Comedy = this.movies.filter(movie => movie.genre.includes("Comedy"));
+              break;
+            case movie.genre.includes("Fantasy"):
+              genres.Fantasy = this.movies.filter(movie => movie.genre.includes("Fantasy"));
+              break;
+            case movie.genre.includes("Horror"):
+              genres.Horror = this.movies.filter(movie => movie.genre.includes("Horror"));
+              break;
+          }
         }
       }
       return genres

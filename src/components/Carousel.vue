@@ -34,13 +34,7 @@ export default {
 
     previous() {
       this.$refs.flickity.previous();
-    },
-    test() {
-      console.log('element clicked')
     }
-  },
-  updated() {
-    this.$refs.flickity.flickity().resize();
   }
 }
 </script>

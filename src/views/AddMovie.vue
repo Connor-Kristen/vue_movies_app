@@ -1,14 +1,19 @@
 <template>
-  <form @submit.prevent="getMovie">
-    <label>TITLE</label>
-    <input type="text" v-model="title">
-    <label>YEAR</label>
-    <input type="number" v-model="year">
-    <label>RATE</label>
-    <input type="number" v-model="rating">
-    <button>ADD MOVIE</button>
-  </form>
-  <div v-if="error !== ''" class="bg-red-400">{{error}}</div>
+  <div class="flex flex-col items-center justify-center wrapper">
+    <div v-if="error !== ''" class="bg-red-400 p-1 text-3xl mb-5">{{error}}</div>
+    <form @submit.prevent="getMovie" class="flex flex-col bg-blue-400 p-2 rounded-xl w-80">
+      <label class="flex flex-col items-start">TITLE
+        <input class="w-full" type="text" v-model="title">
+      </label>
+      <label class="flex flex-col my-3 items-start">YEAR
+        <input class="w-full" type="number" v-model="year">
+      </label>
+      <label class="flex flex-col items-start">RATE
+        <input class="w-full" type="number" v-model="rating">
+      </label>
+      <button class="btn my-3">ADD MOVIE</button>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -54,3 +59,4 @@ export default {
   }
 }
 </script>
+

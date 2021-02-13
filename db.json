@@ -790,6 +790,31 @@
       "plot": "In a violent, futuristic city where the police have the authority to act as judge, jury and executioner, a cop teams with a trainee to take down a gang that deals the reality-altering drug, SLO-MO.",
       "actors": "Karl Urban, Rachel Wood, Andile Mngadi, Porteus Xandau",
       "id": 37
+    },
+    {
+      "title": "Gremlins",
+      "movieYear": "1984",
+      "criticRatings": [
+        {
+          "Source": "Internet Movie Database",
+          "Value": "7.3/10"
+        },
+        {
+          "Source": "Rotten Tomatoes",
+          "Value": "85%"
+        },
+        {
+          "Source": "Metacritic",
+          "Value": "70/100"
+        }
+      ],
+      "userRating": null,
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDVjN2FkYTQtNTBlOC00MjM5LTgzMWEtZWRlNGUyYmNiOTFiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "genre": "Comedy, Fantasy, Horror",
+      "director": "Joe Dante",
+      "plot": "A young man inadvertently breaks three important rules concerning his new pet and unleashes a horde of malevolently mischievous monsters on a small town.",
+      "actors": "Hoyt Axton, John Louie, Keye Luke, Don Steele",
+      "id": 38
     }
   ]
 }

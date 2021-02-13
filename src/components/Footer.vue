@@ -1,8 +1,9 @@
 <template>
-
-    <footer class="h-40 w-full mt-16">
+<teleport to="#footer">
+    <div class="">
       sdfgsadgf
-    </footer>
+    </div>
+</teleport>
 </template>
 
 <script>
