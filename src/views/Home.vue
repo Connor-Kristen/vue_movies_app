@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-3 text-gray-200 my-9">
+  <div class="mt-3 text-gray-200 my-12 mt-20">
     <h2 class="text-left">ALL MOVIES</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in movies" :key="movie.id" :movie="movie"/>
