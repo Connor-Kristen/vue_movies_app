@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-center wrapper">
     <div v-if="error !== ''" class="bg-red-400 p-1 text-3xl mb-5">{{error}}</div>
-    <form @submit.prevent="getMovie" class="flex flex-col bg-blue-400 p-2 rounded-xl w-80">
+    <form @submit.prevent="getMovie" class="flex flex-col bg-blue-400 p-2 w-full h-full">
       <label class="flex flex-col items-start">TITLE
         <input class="w-full" type="text" v-model="title">
       </label>

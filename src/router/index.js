@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import SelectedMovie from '../views/SelectedMovie.vue'
 import AddMovie from '../views/AddMovie.vue'
 import EditMovie from '../views/EditMovie.vue'
+import NotFound from "@/views/NotFound";
 
 const routes = [
   {
@@ -26,6 +27,11 @@ const routes = [
     name: 'EditMovie',
     component: EditMovie,
     props: true
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: NotFound
   }
 ]
 

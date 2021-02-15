@@ -27,16 +27,16 @@
         @apply text-left text-2xl mx-1 px-1 mt-1 pt-1
     }
     #footer {
-        @apply h-40 w-full bg-gray-700 mt-20
+        @apply h-40 w-full bg-gray-700
     }
     .wrapper {
-        height: 38rem;
+        height: 40rem;
     }
     #main-bg {
         @apply w-full h-screen bg-gray-800 fixed -z-10 inset-0
     }
     #navbar {
-        @apply absolute z-20 w-full pr-2
+        @apply relative z-20 w-full
     }
 }
 

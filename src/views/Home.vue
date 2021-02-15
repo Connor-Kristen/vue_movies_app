@@ -1,35 +1,35 @@
 <template>
-  <div class="mt-3 text-gray-200 my-12 mt-20">
+  <div class="mt-3 text-gray-200 my-10 mt-18">
     <h2 class="text-left">ALL MOVIES</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in movies" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 my-12">
+  <div class=" text-gray-200 my-10">
     <h2 class="text-left">ANIMATION</h2>
     <carousel v-if="movies.length > 0" >
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Animation" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 my-12">
+  <div class=" text-gray-200 my-10">
     <h2>COMEDY</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Comedy" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 my-12">
+  <div class=" text-gray-200 my-10">
     <h2>SCI-FI</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.SciFi" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 my-12">
+  <div class=" text-gray-200 my-10">
     <h2>FANTASY</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Fantasy" :key="movie.id" :movie="movie"/>
     </carousel>
   </div>
-  <div class=" text-gray-200 my-12">
+  <div class=" text-gray-200 mt-10 mb-14">
     <h2>HORROR</h2>
     <carousel v-if="movies.length > 0">
       <SingleMovie @deleteMovie="deleteMovie" ref="test" v-for="movie in filteredMovies.Horror" :key="movie.id" :movie="movie"/>
