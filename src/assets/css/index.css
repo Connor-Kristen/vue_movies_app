@@ -38,6 +38,7 @@
     #navbar {
         @apply relative z-20 w-full
     }
+
 }
 
 @layer components {

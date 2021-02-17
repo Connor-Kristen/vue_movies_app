@@ -1,8 +1,8 @@
 <template>
-  <div class="h-screen text-gray-300">
+  <teleport to="#error">
     <span>404</span>
     <div>Page Not Found</div>
-  </div>
+  </teleport>
 </template>
 
 <script>
@@ -10,7 +10,3 @@ export default {
   name: "NotFound"
 }
 </script>
-
-<style scoped>
-
-</style>
