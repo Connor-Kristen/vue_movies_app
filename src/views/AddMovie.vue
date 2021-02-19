@@ -1,18 +1,22 @@
 <template>
-  <div class="flex flex-col items-center justify-center wrapper">
-    <div v-if="error !== ''" class="bg-red-400 p-1 text-3xl mb-5">{{error}}</div>
-    <form @submit.prevent="getMovie" class="flex flex-col bg-blue-400 p-2 w-full h-full">
-      <label class="flex flex-col items-start">TITLE
-        <input class="w-full" type="text" v-model="title">
-      </label>
-      <label class="flex flex-col my-3 items-start">YEAR
-        <input class="w-full" type="number" v-model="year">
-      </label>
-      <label class="flex flex-col items-start">RATE
-        <input class="w-full" type="number" v-model="rating">
-      </label>
-      <button class="btn my-3">ADD MOVIE</button>
-    </form>
+  <div class="w-full flex justify-center">
+    <div class="flex flex-col items-center justify-center max-w-md w-full h-full sm:mt-20">
+      <form @submit.prevent="getMovie" class="flex flex-col justify-start bg-blue-400 p-2 w-full h-full">
+        <fieldset>
+          <label class="flex flex-col items-start">TITLE
+            <input class="w-full px-1" type="text" v-model="title">
+          </label>
+          <label class="flex flex-col my-3 items-start">YEAR
+            <input class="w-full px-1" type="number" v-model="year">
+          </label>
+          <label class="flex flex-col items-start">RATE
+            <input class="w-full px-1" type="number" v-model="rating">
+          </label>
+        </fieldset>
+        <div v-if="error !== ''" class="bg-red-400 p-1 text-3xl my-5">{{error}}</div>
+        <button class="btn my-3">ADD MOVIE</button>
+      </form>
+    </div>
   </div>
 </template>
 
