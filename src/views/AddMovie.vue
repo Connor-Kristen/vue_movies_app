@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex justify-center">
-    <div class="flex flex-col items-center justify-center max-w-md w-full h-full sm:mt-20">
+    <div class="flex flex-col items-center justify-center max-w-lg w-full h-full sm:mt-20">
       <form @submit.prevent="getMovie" class="flex flex-col justify-start bg-blue-400 p-2 w-full h-full">
         <fieldset>
           <label class="flex flex-col items-start">TITLE

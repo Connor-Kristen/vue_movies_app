@@ -115,7 +115,7 @@
         @apply text-green-300
     }
     fieldset {
-        transition: max-height 200ms linear;
+        transition: max-height 100ms linear;
     }
     .btn {
         @apply p-1 bg-green-300 rounded
