@@ -1,15 +1,17 @@
 <template>
-  <div>
+  <div class="text-gray-300">
+    <img :src="poster" :alt="'poster for'+poster" class="inline-block">
     <div>
       <h1>{{title}}</h1>
       <h3>{{year}}</h3>
     </div>
+    <div>Critic Ratings</div>
     <div v-for="rating in criticRatings" :key="rating.source">
-      <span>{{rating.Source}}</span>
+      <span>{{rating.Source}}: </span>
       <span>{{rating.Value}}</span>
     </div>
     <div>
-      <span>{{userRating}}</span>
+      <span>User Rating: {{userRating}}</span>
     </div>
     <div v-for="genre in genres" :key="genre">
       <span>{{genre}}</span>
@@ -35,7 +37,8 @@ export default {
       genres: [],
       director: '',
       plot: '',
-      actors: ''
+      actors: '',
+      poster: ''
     }
   },
   mounted() {
@@ -50,6 +53,7 @@ export default {
           this.director = data.director
           this.plot = data.plot
           this.actors = data.actors
+          this.poster = data.poster
         })
   }
 }

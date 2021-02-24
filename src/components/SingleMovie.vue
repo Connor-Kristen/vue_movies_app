@@ -27,7 +27,7 @@ export default {
           .then(() => {
             this.$emit("deleteMovie", this.movie.id)
             this.$router.go(0);
-      })
+          })
     }
   }
 }
