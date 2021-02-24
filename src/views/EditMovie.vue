@@ -9,7 +9,7 @@
       <div class="relative max-w-lg w-full">
         <fieldset ref="select" :class="{'max-h-8': !expanded, 'max-h-96': expanded}"
                   class="flex flex-col absolute items-end flex-wrap w-full rounded-lg bg-white overflow-hidden">
-          <span class="text-center absolute inline-block w-full flex items-center justify-evenly text-lg h-8 bg-gray-600">
+          <span class="text-center absolute inline-block w-full flex items-center justify-evenly text-lg h-8 text-gray-200 bg-gray-600">
             Select Genre
             <span @click="expand" class="arrow material-icons absolute text-right w-full top-1 h-8 right-0">expand_more</span>
           </span>
