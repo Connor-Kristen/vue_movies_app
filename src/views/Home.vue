@@ -41,24 +41,24 @@
 
 import Carousel from "@/components/Carousel";
 import SingleMovie from "@/components/SingleMovie";
+import getMovies from "@/composables/getMovies"
 export default {
   name: 'Home',
   components: {
     Carousel,
     SingleMovie
   },
-  data () {
-    return {
-      movies: [],
+  setup() {
+    const {load, error, movies} = getMovies();
 
-    }
-  },
-  mounted () {
-    fetch(" http://localhost:3000/movies")
-        .then(res => res.json())
-        .then(data => this.movies = data)
-        .catch(console.log)
+    load()
 
+    return {error, movies}
+  // data () {
+  //   return {
+  //     movies: [],
+  //
+  //   }
   },
   methods: {
     deleteMovie(id) {
