@@ -10,15 +10,29 @@
       <router-link :to="{name: 'EditMovie', params: {id: movie.id}}" class="flex">
         <span class="material-icons">create</span>
       </router-link>
-      <span class="material-icons">delete_outline</span>
+      <span @click="deleteMovie" class="material-icons">delete_outline</span>
     </div>
   </div>
 </template>
 
 <script>
+import {projectFirestore} from "@/firebase/config";
+import {useRouter} from "vue-router";
+
 export default {
   name: "SingleMovie",
   props: ["movie"],
+  setup(props) {
+    const router = useRouter()
+    const deleteMovie = async () => {
+      await projectFirestore.collection('movies')
+          .doc(props.movie.id)
+          .delete()
+      await router.go(0)
+    }
+
+    return { deleteMovie }
+  }
 }
 
 </script>
