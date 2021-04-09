@@ -1,60 +1,39 @@
 <template>
-  <div class="text-gray-300">
-    <img :src="poster" :alt="'poster for'+poster" class="inline-block">
+  <div class="text-gray-300" v-if="movie !== null">
+    <img :src="movie.poster" :alt="'poster for'+movie.poster" class="inline-block">
     <div>
-      <h1>{{title}}</h1>
-      <h3>{{year}}</h3>
+      <h1>{{movie.title}}</h1>
+      <h3>{{movie.year}}</h3>
     </div>
     <div>Critic Ratings</div>
     <div v-for="rating in criticRatings" :key="rating.source">
-      <span>{{rating.Source}}: </span>
-      <span>{{rating.Value}}</span>
+      <span>{{movie.rating.Source}}: </span>
+      <span>{{movie.rating.Value}}</span>
     </div>
     <div>
-      <span>User Rating: {{userRating}}</span>
+      <span>User Rating: {{movie.userRating}}</span>
     </div>
     <div v-for="genre in genres" :key="genre">
-      <span>{{genre}}</span>
+      <span>{{movie.genre}}</span>
     </div>
     <div>
-      <span>{{director}}</span>
-      <span>{{actors}}</span>
-      <p>{{plot}}</p>
+      <span>{{movie.director}}</span>
+      <span>{{movie.actors}}</span>
+      <p>{{movie.plot}}</p>
     </div>
   </div>
 </template>
 
 <script>
+import getMovie from '@/composables/getMovie'
 export default {
   name: "SelectedMovie",
   props: ["id"],
-  data() {
-    return {
-      title: '',
-      year: '',
-      criticRatings: [],
-      userRating: '',
-      genres: [],
-      director: '',
-      plot: '',
-      actors: '',
-      poster: ''
-    }
-  },
-  mounted() {
-    fetch(`http://localhost:3000/movies/${this.id}`)
-        .then(resp => resp.json())
-        .then(data => {
-          this.title = data.title
-          this.year = data.year
-          this.criticRatings = data.criticRatings
-          this.userRating = data.userRating
-          this.genres = data.genre.split(",");
-          this.director = data.director
-          this.plot = data.plot
-          this.actors = data.actors
-          this.poster = data.poster
-        })
+  setup(props) {
+    const {error, movie, load} = getMovie(props.id)
+    load()
+    return {error, movie}
+
   }
 }
 </script>
