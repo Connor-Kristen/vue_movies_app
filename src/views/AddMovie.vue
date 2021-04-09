@@ -23,6 +23,7 @@
 <script>
 import {ref} from "vue"
 import {useRouter} from "vue-router"
+import {projectFirestore} from "@/firebase/config";
 export default {
   name: "AddMovie",
   setup () {
@@ -38,22 +39,21 @@ export default {
         if (!movies.ok) throw new Error("could not find that movie");
         movieFound.value = await movies.json()
         if (movieFound.value.Error === "Movie not found!") throw new Error("Movie not found");
-        fetch(" http://localhost:3000/movies",
-            {
-              method: "POST",
-              headers: {'Content-Type': 'application/json'},
-              body: JSON.stringify({
-                title: movieFound.value.Title,
-                movieYear: movieFound.value.Year,
-                criticRatings: movieFound.value.Ratings,
-                userRating: parseInt(rating.value),
-                poster: movieFound.value.Poster,
-                genre: movieFound.value.Genre,
-                director: movieFound.value.Director,
-                plot: movieFound.value.Plot,
-                actors: movieFound.value.Actors
-              })
-            }).then(() => {router.push({name: "Home"})})
+        const movie = {
+          title: movieFound.value.Title,
+          movieYear: movieFound.value.Year,
+          criticRatings: movieFound.value.Ratings,
+          userRating: parseInt(rating.value),
+          poster: movieFound.value.Poster,
+          genre: movieFound.value.Genre,
+          director: movieFound.value.Director,
+          plot: movieFound.value.Plot,
+          actors: movieFound.value.Actors
+        }
+        // eslint-disable-next-line no-unused-vars
+        const resp = await projectFirestore.collection('movies').add(movie)
+
+        await router.push({name: "Home"})
       } catch (e) {
         const errorString = e.toString()
         error.value = errorString.substring(errorString.indexOf(":")+1);}

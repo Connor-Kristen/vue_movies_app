@@ -8,6 +8,9 @@ const getMovie = (id) => {
     const load = async () => {
         try {
             let resp = await projectFirestore.collection('movies').doc(id).get()
+            if(!resp.exists) {
+                throw Error('movie does not exist')
+            }
             movie.value = { ...resp.data(), id: resp.id }
         }
         catch (err) {

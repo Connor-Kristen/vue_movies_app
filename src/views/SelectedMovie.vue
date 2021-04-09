@@ -22,6 +22,7 @@
       <p>{{movie.plot}}</p>
     </div>
   </div>
+  <div v-else class="text-xl text-gray-100">{{error}}</div>
 </template>
 
 <script>
